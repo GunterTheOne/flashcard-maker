@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flashcard Maker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Flashcard Maker</h1>
+    <p class="subtitle">Paste your notes below, and let the AI turn them into flashcards.</p>
+
+    <textarea id="notes-input" placeholder="Paste your class notes here..."></textarea>
+
+    <button id="generate-btn">Generate Flashcards</button>
+    <p id="status"></p>
+
+    <div id="card-count" class="card-count"></div>
+    <div id="cards-container" class="cards-container"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
