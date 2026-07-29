@@ -5,8 +5,6 @@ from openai import OpenAI
 
 app = Flask(__name__)
 
-# BazaarLink is a free, OpenAI-compatible LLM gateway. We point the OpenAI
-# SDK at their base_url and use our BazaarLink key instead of an OpenAI key.
 client = OpenAI(
     base_url="https://bazaarlink.ai/api/v1",
     api_key=os.environ.get("BAZAARLINK_API_KEY"),
